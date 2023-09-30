@@ -1,0 +1,271 @@
+:root {
+    --blue--: #1a73e8;
+    --red--: #fc2b26;
+    --white--: #ffffff;
+    --text--: #5f6368;
+    --border--: #bdc1c6;
+    --bg--: #f1f3f4;
+}
+
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg--);
+}
+
+h1,
+h2 {
+    font-weight: 600;
+}
+
+p {
+    font-weight: 400;
+    font-size: 18px;
+}
+
+h1 {
+    font-size: 46px;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+.btn {
+    font-size: 14px;
+    font-weight: 500;
+    padding: 7px 30px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    text-decoration: none;
+}
+
+/* 
+ nav
+*/
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--white--);
+    border: 1px solid var(--border--);
+    padding: 25px 30px;
+}
+
+nav img {
+    width: 59px;
+    height: 30px;
+}
+
+nav ul a {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--text--);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+
+}
+
+.hero {
+    display: flex;
+    gap: 80px;
+    justify-content: center;
+    padding: 50px 30px;
+    flex-wrap: wrap;
+}
+
+.hero div {
+    /* for responsive */
+    max-width: 600px;
+}
+
+.hero img {
+    max-width: 420px;
+    height: 215px;
+}
+
+.hero h1 {
+    color: var(--blue--);
+    line-height: 56px;
+    margin-bottom: 16px;
+}
+
+.hero p {
+    color: var(--text--);
+    margin-bottom: 17px;
+}
+
+.hero .btn {
+    color: var(--white--);
+    background-color: var(--blue--);
+    display: table;
+}
+
+/* 
+ about
+*/
+#about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white--);
+    padding: 50px 60px;
+    gap: 20px;
+
+}
+
+#about h2 {
+    color: #fc2b26;
+    line-height: 54px;
+    margin-bottom: 7px;
+
+}
+
+.about_p {
+    align-self: flex-end;
+}
+
+#about div {
+    max-width: 600px;
+}
+
+#about p {
+    color: var(--text--);
+}
+
+/* 
+ contact
+*/
+#contact {
+    background-color: var(--blue--);
+    display: flex;
+    justify-content: center;
+    padding: 50px 30px;
+    flex-wrap: wrap;
+    gap: 0 80px;
+    align-items: end;
+}
+
+#contact h2 {
+    color: var(--white--);
+    margin-bottom: 4px;
+}
+
+#contact label {
+    color: var(--white--);
+    margin-bottom: 3px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+#contact div:first-child {
+    max-width: 400px;
+    width: 100%;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact input {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--text--);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-color: var(--border--);
+    border-width: 1px;
+    padding: 5px 14px;
+    outline: none;
+    margin-bottom: 16px;
+}
+
+#contact .btn_form {
+    border: none;
+    color: var(--blue--);
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--white--);
+    margin-top: 10px;
+    padding: 5px 14px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+#contact .google_map {
+    max-width: 600px;
+    width: 100%;
+}
+
+/* 
+ footer
+*/
+footer {
+    background-color: var(--white--);
+    border: 1px solid var(--border--);
+    padding: 25px 30px;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    color: var(--text--);
+}
+
+
+@media screen and (max-width:1160px) {
+    h1 {
+        font-size: 36px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+
+    .hero img,
+    #contact .google_map {
+        display: none;
+    }
+}
+
+@media screen and (max-width:600px) {
+    #contact div:first-child {
+        max-width: 100%;
+    }
+}
